@@ -1,0 +1,923 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    background: black;
+}
+
+/* 顶部菜单栏 */
+#topTitle {
+    position: absolute;
+    top: 20px;
+    left: 47px;
+    z-index: 11111;
+    display: flex;
+    width: 1344px;
+    justify-content: space-between;
+}
+
+/* 顶部左边logo */
+#topTitle img {
+    width: 120px;
+    height: 12px;
+}
+
+#topTitle ul,
+li {
+    list-style: none;
+}
+
+/* 顶部中间菜单栏 */
+.newHide {
+    /* width: 70px;
+    height: 25px; */
+    background: rgba(192, 202, 213, 0.7);
+    border-radius: 10px;
+}
+
+#topTitle .menu ul {
+    display: flex;
+    margin-left: 40px;
+}
+
+#topTitle .menu ul a {
+    text-decoration: none;
+    color: black;
+}
+
+#topTitle .menu ul li {
+    width: 70px;
+    height: 25px;
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* 顶部右边登录 */
+#topTitle .login ul {
+    display: flex;
+}
+
+#topTitle .login ul a {
+    text-decoration: none;
+    color: black;
+}
+
+#topTitle .login ul li {
+    width: 70px;
+    height: 25px;
+    margin-left: 20px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* 主图部分 */
+.mainPic {
+    width: 100%;
+    height: 900px;
+    background: url(../img/Model-S-1.jpeg);
+    background-size: 100% 100%;
+}
+
+.mainPic .contentTitle {
+    position: relative;
+}
+
+.mainPic .contentTitle ul {
+    height: 60px;
+    text-align: center;
+    height: 60px;
+    text-align: center;
+    /* line-height: 60px; */
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.mainPic .contentTitle .title {
+    width: 100%;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.mainPic .contentTitle .drive {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mainPic .contentTitle ol {
+    list-style: none;
+    width: 1200px;
+    display: flex;
+    position: absolute;
+    top: 620px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+
+    text-align: center;
+    font-size: 12px;
+    color: white;
+
+}
+
+.mainPic .contentTitle ol li {
+    width: 350px;
+    margin-left: 40px;
+}
+
+.mainPic .contentTitle ol span {
+    font-size: 30px;
+}
+
+.mainPic .contentTitle ol .single {
+    width: 300px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    margin-left: 40px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mainPic .contentTitle p {
+    position: absolute;
+    top: 730px;
+    left: 660px;
+    color: white;
+    font-size: 10px;
+}
+
+/* model S 第二板块区 */
+#ModelSTwo {
+    width: 100%;
+    height: 900px;
+    background: url(../img/Model-S-2.jpeg) no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 150px;
+}
+
+#ModelSTwo p {
+    width: 150px;
+    color: white;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+/* 轮播板块 */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    /* text-align: center; */
+    font-size: 15px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    vertical-align: top;
+    position: relative;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+    height: 600px;
+    border-radius: 20px;
+    margin-bottom: 200px;
+}
+ .swiper {
+     --swiper-theme-color:white;
+     --swiper-pagination-color: white;
+     /* 两种都可以 */
+ }
+ .s1{
+    background-image: url(../img/lunbo1.jpeg);
+    background-size: 100% 100%;
+ }
+ .s1 span{
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    left: 70px;
+ }
+ .s2 {
+     background-image: url(../img/lunbo2.jpeg);
+     background-size: 100% 100%;
+ }
+
+ .s2 span {
+     color: white;
+     position: absolute;
+     bottom: 40px;
+     left: 70px;
+ }
+ .s3 {
+     background-image: url(../img/lunbo3.jpeg);
+     background-size: 100% 100%;
+ }
+
+ .s3 span {
+     color: white;
+     position: absolute;
+     bottom: 40px;
+     left: 70px;
+ }
+ .s4 {
+     background-image: url(../img/lunbo4.jpeg);
+     background-size: 100% 100%;
+ }
+
+ .s4 span {
+     color: white;
+     position: absolute;
+     bottom: 40px;
+     left: 70px;
+ }
+
+ /* 第四板块区 */
+
+#content{
+    margin-top: 80px;
+    width: 800px;
+    margin: 0 auto;
+}
+#content .one{
+    display: flex;
+}
+#content .one .left{
+    width:400px;
+    color: white;
+    height: 225px;
+    
+  
+}
+#content .one .right{
+ width:400px;
+ height: 225px;
+}
+#content .one .left img{
+    width: 100%;
+}
+#content .one .right p{    
+    font-size: 20px;
+    color: white;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+#content .one .right h6{
+    font-size: 12px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+
+}
+/* two */
+#content .two {
+    display: flex;
+}
+
+#content .two .left,
+.right {
+    width: 400px;
+    height: 225px;
+    color: white;
+
+
+}
+
+#content .two .right img {
+    width: 100%;
+}
+
+#content .two .left p {
+    margin-top: 80px;
+    font-size: 20px;
+}
+
+#content .two .left h6 {
+    font-size: 12px;
+    color: white;
+    margin-top: 10px;
+}
+/* three */
+#content .three {
+    display: flex;
+}
+#content .three video{
+    width: 400px;
+    height: 235px;
+}
+#content .three .right {
+    width: 400px;
+    height: 235px;
+}
+
+#content .three .right p {
+   font-size: 20px;
+   color: white;
+   margin-top: 80px;
+   margin-left: 50px;
+}
+
+#content .three .right h6 {
+   font-size: 12px;
+   color: white;
+   margin-top: 10px;
+   margin-left: 50px;
+}
+/* four */
+#content .four {
+    display: flex;
+}
+
+#content .four .left,
+.right {
+    width: 400px;
+    height: 235px;
+    color: white;
+
+
+}
+
+#content .four .right img {
+    width: 100%;
+}
+
+#content .four .left p {
+     margin-top: 80px;
+     font-size: 20px;
+}
+
+#content .four .left h6 {
+   font-size: 12px;
+   color: white;
+   margin-top: 10px;
+}
+/* 第五板块区 */
+#five{
+    width: 100%;
+    height: 600px;
+    margin-top: 100px;
+    position: relative;
+}
+#five img{
+    width: 100%;
+    height: 100%;
+    
+}
+#five ul{
+    text-align: center;
+    width: 800px;
+    display: flex;
+    position: absolute;
+    color: white;
+    top: 500px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-size: 30px;
+}
+#five ul span{
+    font-size: 10px;
+}
+/* 第六板块区域 */
+#six{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    overflow: hidden;
+    
+}
+#six .left{
+    margin-left: 150px;
+    padding-top: 30px;
+    float: left;
+}
+#six .left h6{
+    font-size: 20px;
+}
+#six .left span{
+    font-size: 35px;
+}
+#six .left .buy{
+    width: 250px;
+    height: 30px;
+    border: 2px solid #000;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#six .right{
+   color:black;
+   width: 650px;
+   float: left;
+   margin-left: 200px;
+   margin-top: 60px;
+}
+/* 第七大部分 */
+#seven{
+    width: 100%;
+    height: 1400px;
+    background-color: #f4f4f4;
+}
+#seven .title {
+    width: 800px;
+    padding-top: 200px;
+    margin-left: 150px;    
+}
+#seven .title h6{
+    font-size: 30px;
+}
+#seven .title p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+#seven .sevenMain{
+    width: 1400px;
+    height: 600px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 100px;
+    position: relative;
+}
+#seven .sevenMain img{
+    width: 1300px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;}
+
+#seven .tab {
+    color: #000;
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#seven .tab .tableft{
+    width: 600px;
+    margin-top: 50px;
+    cursor: pointer;
+
+}
+#seven .tab .tableft h6{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#seven .tab .tableft span{
+    font-size: 14px;
+}
+#seven .tab .data{
+    display: flex;
+    margin-top: 20px;
+    width: 300px;
+    justify-content: space-between;
+}
+#seven .tab .data div:nth-child(1){
+    font-size: 12px;
+}
+#seven .tab .data div:nth-child(1) span{
+    font-size: 26px;
+}
+#seven .tab .tabright{
+    width: 600px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+#seven .tab hr{
+    border: 2px solid #000;
+}
+#seven .tab .data div:nth-child(2) {
+    font-size: 12px;
+}
+
+#seven .tab .data div:nth-child(2) span {
+    font-size: 26px;
+}#seven .tab .tableft{
+    width: 600px;
+    margin-top: 50px;
+
+}
+#seven .tab .tableft h6{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#seven .tab .tableft span{
+    font-size: 14px;
+}
+#seven .tab .data{
+    display: flex;
+    margin-top: 20px;
+    width: 300px;
+    justify-content: space-between;
+}
+#seven .tab .data div:nth-child(1){
+    font-size: 12px;
+}
+#seven .tab .data div:nth-child(1) span{
+    font-size: 26px;
+}
+
+/* you */
+#seven .tab .tabright {
+    width: 600px;
+    margin-top: 50px;
+
+}
+
+#seven .tab .tabright h6 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#seven .tab .tabright span {
+    font-size: 14px;
+}
+
+#seven .tab .data {
+    display: flex;
+    margin-top: 20px;
+    width: 300px;
+    justify-content: space-between;
+}
+
+#seven .tab .data div:nth-child(1) {
+    font-size: 12px;
+}
+
+#seven .tab .data div:nth-child(1) span {
+    font-size: 26px;
+}
+#seven  .sevenEnd{
+    width: 100px;
+    margin: 100px auto;
+    font-size: 12px;
+    color: gray;
+}
+
+/* 第八大块 */
+
+#eight .banner{
+    width: 100%;
+}
+#eight .banner img{
+    width: 100%;
+}
+#eightContent {
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    overflow: hidden;
+    color: white;
+
+}
+
+#eightContent .left {
+    margin-left: 150px;
+    padding-top: 30px;
+    float: left;
+}
+
+#eightContent .left h6 {
+    font-size: 20px;
+}
+
+#eightContent .left span {
+    font-size: 35px;
+}
+
+#eightContent .left .buy {
+    width: 250px;
+    height: 30px;
+    border: 2px solid white;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#eightContent .right {
+    color: white;
+    width: 650px;
+    float: left;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+
+/* 第八块主要区域 */
+#eightMain{
+     margin-top: 80px;
+     width: 800px;
+     margin: 0 auto;
+}
+#eightMain .one {
+    display: flex;
+}
+
+#eightMain .one .left {
+    width: 400px;
+    color: white;
+    height: 225px;
+
+
+}
+
+#eightMain .one .right {
+    width: 400px;
+    height: 225px;
+}
+
+#eightMain .one .left img {
+    width: 100%;
+}
+
+#eightMain .one .right p {
+    font-size: 20px;
+    color: white;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+#eightMain .one .right h6 {
+    font-size: 12px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+
+}
+
+/* two */
+#eightMain .two {
+    display: flex;
+}
+
+#eightMain .two .left,
+.right {
+    width: 400px;
+    height: 225px;
+    color: white;
+
+
+}
+
+#eightMain .two .right img {
+    width: 100%;
+}
+
+#eightMain .two .left p {
+    margin-top: 80px;
+    font-size: 20px;
+}
+
+#eightMain .two .left h6 {
+    font-size: 12px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* three */
+#eightMain .three {
+    display: flex;
+}
+
+#eightMain .three .left {
+    width: 400px;
+    color: white;
+    height: 225px;
+
+
+}
+
+#eightMain .three .right {
+    width: 400px;
+    height: 225px;
+}
+
+#eightMain .three .left img {
+    width: 100%;
+}
+
+#eightMain .three .right p {
+    font-size: 20px;
+    color: white;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+#eightMain .three .right h6 {
+    font-size: 12px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+
+}
+
+/* 第九块video区域 */
+#video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#video .lvideo{
+    width: 70%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+#video .rcontent{
+    width: 30%;
+    height: 100%;
+    color:black;
+    background-color: #fff;
+}
+#video .rcontent .top h6{
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+#video .rcontent .top p{
+    margin-left: 50px;
+    font-size: 24px;
+}
+#video .rcontent .top .body{
+    width: 300px;
+    margin-top: 50px;
+    font-size: 12px;
+    margin-left: 50px;
+}
+#video .rcontent .down{
+    margin-left: 100px;
+    margin-top: 99%;
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    border: 2px solid #000;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+#video .lvideo video{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#video ul {
+    text-align: center;
+    width: 800px;
+    display: flex;
+    position: absolute;
+    color: white;
+    top: 600px;
+    left: -500px;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+#video ul span {
+    font-size: 10px;
+}
+
+/* 安全模块区域 */
+#clear{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#safe {
+    /* position: absolute; */
+    width: 100%;
+    height: 700px;
+    display: flex;
+    background-color: #fff;
+    
+}
+
+#safe .lvideo {
+    width: 70%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+#safe .lvideo img{
+    width: 100%;
+}
+
+#safe .rcontent {
+    width: 30%;
+    height: 100%;
+    color: black;
+    background-color: #fff;
+}
+
+#safe .rcontent .top h6 {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+#safe .rcontent .top p {
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+#safe .rcontent .top .body {
+    width: 300px;
+    margin-top: 50px;
+    font-size: 12px;
+    margin-left: 50px;
+}
+
+#safe .rcontent .down {
+    margin-left: 100px;
+    margin-top: 99%;
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    border: 2px solid #000;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 第十一块区域 */
+#visition{
+    width: 100%;
+    height: 600px;
+    background: url(../img/visition.jpeg);
+    background-size: 100% 100%;
+  
+}
+#visition div:nth-child(1){
+    margin-left: 60px;
+    padding-top: 80px;
+}
+#visition div:nth-child(2) {
+    margin-top: 140px;
+    margin-left: 60px;
+
+}
+#visition div:nth-child(3) {
+    margin-left: 60px;
+    margin-top: 90px;
+}
+#visition img{
+    width: 30px;
+    height: 30px;
+}
+#visition div h6{
+    font-size: 30px;
+}
+#visition div p{
+    font-size: 12px;
+}

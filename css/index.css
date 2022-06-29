@@ -1,0 +1,513 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+#container,
+.section {
+    height: 100%;
+    position: relative;
+}
+#container .section img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 背景图设置 */
+#container .page1{
+    background-image: url(../img/page1.jpeg);
+    background-size: 100% 100%;
+}
+#container .page2 {
+    background-image: url(../img/page2.jpeg);
+    background-size: 100% 100%;
+}
+#container .page3 {
+    background-image: url(../img/page3.jpeg);
+    background-size: 100% 100%;
+}
+#container .page4 {
+    background-image: url(../img/page4.jpeg);
+    background-size: 100% 100%;
+}
+#container .page5 {
+    background-image: url(../img/page5.jpeg);
+    background-size: 100% 100%;
+}
+#container .page6 {
+    background-image: url(../img/page6.jpeg);
+    background-size: 100% 100%;
+}
+/* 顶部菜单栏 */
+#topTitle{
+    position: fixed;
+    top: 20px;
+    left: 47px;
+    z-index: 11111;
+    display: flex;
+    width: 1344px;
+    justify-content: space-between;
+}
+/* 顶部左边logo */
+#topTitle img{
+    width: 120px;
+    height: 12px;
+}
+#topTitle ul,li{
+    list-style: none;
+}
+/* 顶部中间菜单栏 */
+.newHide{
+    /* width: 70px;
+    height: 25px; */
+    background: rgba(192, 202, 213, 0.7);
+    border-radius: 10px;
+}
+#topTitle .menu ul{
+    display: flex;
+    margin-left: 40px;
+}
+#topTitle .menu ul a{
+    text-decoration: none;
+    color: black;
+}
+#topTitle .menu ul li{
+    width: 70px;
+    height: 25px;
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    line-height: 25px;
+}
+/* 顶部右边登录 */
+#topTitle .login ul{
+    display: flex;
+}
+#topTitle .login ul a {
+    text-decoration: none;
+    color: black;
+}
+#topTitle .login ul  li{
+    width: 70px;
+    height: 25px;
+    margin-left: 20px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* 第一屏内容区域 */
+#container .page1{
+    position: relative;
+}
+#container .page1 .contentTitle{
+    position:relative;
+}
+#container .page1 .contentTitle ul{
+    height: 60px;
+    text-align: center;
+    /* line-height: 60px; */
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+#container .page1 .contentTitle .title{
+    width: 100%;
+    font-size: 45px;
+    font-weight: bolder;
+}
+#container .page1 .contentTitle .drive{
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#container .page1 .contentCustom{
+    width: 630px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+#container .page1 .down{
+    width: 20px;
+    height: 20px;
+    border:none;
+    border-right: 1px solid #3c3f43;
+    border-top: 1px solid #3c3f43;
+    position: absolute;
+    top: 700px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    transform:rotate(135deg);
+    cursor: pointer;
+}
+#container .page1 .contentCustom .custom{
+    width: 264px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3c3f43;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #e7e7e7;
+    font-size: 13px;
+}
+#container .page1 .contentCustom .toKnow{
+     width: 264px;
+     height: 40px;
+     border-radius: 20px;
+     background-color: #e7e7e7;
+     text-align: center;
+     line-height: 40px;
+     cursor: pointer;
+     color: #3c3f43;
+    font-size: 13px;
+}
+/* 第二屏区域 */
+#container .page2 {
+    position: relative;
+}
+
+#container .page2 .contentTitle {
+    position: relative;
+}
+
+#container .page2 .contentTitle ul {
+    height: 60px;
+    text-align: center;
+    /* line-height: 60px; */
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+#container .page2 .contentTitle .title {
+    width: 100%;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+#container .page2 .contentTitle .drive {
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#container .page2 .contentCustom {
+    width: 630px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+#container .page2 .contentCustom .custom {
+    width: 264px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3c3f43;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #e7e7e7;
+    font-size: 13px;
+}
+
+#container .page2 .contentCustom .toKnow {
+    width: 264px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #e7e7e7;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #3c3f43;
+    font-size: 13px;
+}
+/* 第三屏区域 */
+#container .page3 {
+    position: relative;
+}
+
+#container .page3 .contentTitle {
+    position: relative;
+}
+
+#container .page3 .contentTitle ul {
+    height: 60px;
+    text-align: center;
+    /* line-height: 60px; */
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+#container .page3 .contentTitle .title {
+    width: 100%;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+#container .page3 .contentTitle .drive {
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#container .page3 .contentCustom {
+    width: 630px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+#container .page3 .contentCustom .custom {
+    width: 264px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3c3f43;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #e7e7e7;
+    font-size: 13px;
+}
+
+#container .page3 .contentCustom .toKnow {
+    width: 264px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #e7e7e7;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #3c3f43;
+    font-size: 13px;
+}
+/* 第四屏区域 */
+#container .page4 {
+    position: relative;
+}
+
+#container .page4 .contentTitle {
+    position: relative;
+}
+
+#container .page4 .contentTitle ul {
+    height: 60px;
+    text-align: center;
+    /* line-height: 60px; */
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+#container .page4 .contentTitle .title {
+    width: 100%;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+#container .page4 .contentTitle .drive {
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#container .page4 .contentCustom {
+    width: 630px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+#container .page4 .contentCustom .custom {
+    width: 264px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3c3f43;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #e7e7e7;
+    font-size: 13px;
+}
+
+#container .page4 .contentCustom .toKnow {
+    width: 264px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #e7e7e7;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #3c3f43;
+    font-size: 13px;
+}
+/* 第五屏区域 */
+#container .page5 {
+    position: relative;
+}
+
+#container .page5 .contentTitle {
+    position: relative;
+}
+
+#container .page5 .contentTitle ul {
+    height: 60px;
+    text-align: center;
+    /* line-height: 60px; */
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+#container .page5 .contentTitle .title {
+    width: 100%;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+#container .page5 .contentTitle .drive {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#container .page5 .contentCustom {
+    width: 630px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+#container .page5 .contentCustom .custom {
+    width: 264px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3c3f43;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #e7e7e7;
+    font-size: 13px;
+}
+
+
+/* 第六屏区域 */
+#container .page6 {
+    position: relative;
+}
+
+#container .page6 .contentTitle {
+    position: relative;
+}
+
+#container .page6 .contentTitle ul {
+    height: 60px;
+    text-align: center;
+    /* line-height: 60px; */
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+#container .page6 .contentTitle .title {
+    width: 100%;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+
+
+#container .page6 .contentCustom {
+    width: 630px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+#container .page6 .contentCustom .custom {
+    width: 264px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3c3f43;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #e7e7e7;
+    font-size: 13px;
+}
+#container .page6 .aboutUs{
+    font-size: 12px;
+    width: 700px;
+    position: absolute;
+    top: 720px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+#container .page6 .aboutUs ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+#container .page6 .aboutUs ul li{
+    cursor: pointer;
+}
+

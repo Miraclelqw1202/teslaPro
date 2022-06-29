@@ -1,0 +1,118 @@
+/* 顶部 */
+#top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#top .left {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#top .left img {
+    width: 150px;
+    cursor: pointer;
+}
+
+#top .right {
+    width: 100px;
+    height: 32px;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#top .right img {
+    width: 32px;
+    vertical-align: middle;
+}
+/* 登录内容区域 */
+#container{
+    width: 350px;
+    margin: 0 auto;
+}
+#container .loginFont{
+    font-size: 35px;
+}
+#container .mail {
+    margin-top: 40px;
+}
+#container .one{
+    width: 330px;
+    height: 40px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    outline: none;
+}
+
+#container .two {
+    width: 330px;
+    height: 40px;
+    background-color: #3d69e1;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+#container .three {
+    width: 330px;
+    height: 40px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+
+}
+#container .forget{
+    width: 330px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+#container .forget .forgetOne,.forgetTwo{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#container .or{
+    margin-top: 40px;
+    color:black;
+}
+#container .or span{
+    color: #e2e4e4;
+}
+#container .four {
+    width: 330px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-top: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+#container .footer{
+    width: 330px;
+    font-size: 12px;
+}
+#container .footer ul{
+    display: flex;
+    list-style: none;
+    margin-top: 50px;
+    
+}
+#container .footer ul li{
+    cursor: pointer;
+    margin-left: 11px;
+}
